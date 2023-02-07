@@ -9,6 +9,16 @@ const gallery = document.querySelector('.gallery');
 const btnLoadMore = document.querySelector('.load-more');
 let gallerySimpleLightbox = new SimpleLightbox('.gallery a');
 
+// const { height: cardHeight } = document
+//   .querySelector('.gallery')
+//   .firstElementChild.getBoundingClientRect();
+
+// window.scrollBy({
+//   top: cardHeight * 2,
+
+//   behavior: 'smooth',
+// });
+
 btnLoadMore.style.display = 'none';
 
 let pageNumber = 1;
@@ -34,6 +44,7 @@ btnSearch.addEventListener('click', e => {
     });
   }
 });
+
 btnLoadMore.addEventListener('click', () => {
   pageNumber++;
   const trimmedValue = input.value.trim();
@@ -52,6 +63,7 @@ btnLoadMore.addEventListener('click', () => {
     }
   });
 });
+
 function renderImageList(images) {
   console.log(images, 'images');
   const markup = images
@@ -78,6 +90,7 @@ function renderImageList(images) {
     .join('');
   gallery.innerHTML += markup;
 }
+
 function cleanGallery() {
   gallery.innerHTML = '';
   pageNumber = 1;
