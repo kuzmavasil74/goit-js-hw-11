@@ -29,7 +29,9 @@ btnSearch.addEventListener('click', e => {
         Notiflix.Notify.success(
           `Hooray! We found ${foundData.totalHits} images.`
         );
-        btnLoadMore.style.display = 'block';
+        if (foundData.totalHits > foundData.hits.length * pageNumber) {
+          btnLoadMore.style.display = 'block';
+        }
         gallerySimpleLightbox.refresh();
       }
     });
@@ -50,7 +52,9 @@ btnLoadMore.addEventListener('click', () => {
       Notiflix.Notify.success(
         `Hooray! We found ${foundData.totalHits} images.`
       );
-      btnLoadMore.style.display = 'block';
+      if (foundData.totalHits > foundData.hits.length * pageNumber) {
+        btnLoadMore.style.display = 'block';
+      }
     }
   });
 });
