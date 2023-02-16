@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 200px;
+    max-width: 250px;
     margin: 5px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -32,7 +32,7 @@
   display: flex;
   gap: 5px;
   justify-content: space-around;
-  color: #444;
+  color: #819889;
   &__box {
     max-width: 50px;
     text-align: center;

@@ -2,27 +2,27 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  // padding: 10px 20px;
+  // padding: 15px 30px;
   text-align: center;
  align-items: center;
   // font-weight: bold;
  
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
   justify-content: center; 
 
  & .load-more{
-  width: 300px;
+  width: 400px;
   font-family:'Times New Roman', Times, serif;
-  background-color: #4056b4;
+  background-color: #40b493;
   color: aliceblue;
   padding: 20px;
-  border-radius: 8px;
-  margin: 20px;
+  border-radius: 10px;
+  margin: 25px;
  }
   .close-btn{
-     background-color: #4056b4;
+     background-color: #a740b4;
      padding: 21px;
   border-radius: 8px;
   margin: 20px;
